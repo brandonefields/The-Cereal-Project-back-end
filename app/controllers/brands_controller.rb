@@ -19,7 +19,7 @@ class BrandsController < ApplicationController
         @brand = Brand.new(
             brand_name: params[:brand_name],
             brand_image: params[:brand_image],
-            brand_rating: params[:brand_rating]
+            brand_rating: params[:brand_rating],
         )
 
         if @brand.valid?
